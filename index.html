@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Lib</title>
+    <link href="deploy/shortly-framework.min.css" type="text/css" rel="stylesheet">
+    <link href="core/styles/custom.css" type="text/css" rel="stylesheet">
+    <script src="deploy/sQuery.min.js" type="text/javascript"></script>
+    <script src="deploy/shortly-framework.min.js" type="text/javascript"></script>
+    <!--<link href="core/styles/master.css" type="text/css" rel="stylesheet">
+    <link href="core/styles/custom.css" type="text/css" rel="stylesheet">
+    <script src="core/script/prototypes.js" type="text/javascript"></script>
+    <script src="core/script/libs/sQuery.js" type="text/javascript"></script>
+    <script src="core/script/main.js" type="text/javascript"></script>
+    <script src="core/script/dictionary.js" type="text/javascript"></script>
+    <script src="core/script/components.js" type="text/javascript"></script>-->
+  </head>
+  <body>
+    <h1 class="color-blood jumbo-header">{{App.FwName}} <span>{{App.FwDescription}}</span></h1>
+    <div class="content" id="container">
+      <div id="language">
+        <label>{{App.Language}}</label>
+        <select id="slcLanguage" onchange="App.changeLanguage(this.value)" style="color: #ccc">
+          <option value="en">Inglês</option>
+          <option value="pt">Português</option>
+        </select>
+      </div>
+      <div id="headers_section"></div>
+      <div id="buttons_section"></div>
+      <div id="boxes_section"></div>
+      <div id="alerts_section"></div>
+      <div id="grids_section"></div>
+      <div id="tables_section"></div>
+      <div id="forms_section"></div>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    window.onload = function(){
+      var configs = {
+        dictionaryPath: "core/data/dictionary.xml"
+      };
+
+      var buyList = [
+          {
+              _id: 2000,
+              name: "Chocolate Nestle",
+              description: "Chocolate com amendoas",
+              price: "R$ 20,00",
+              qty: 5
+          },
+          {
+              _id: 2007,
+              name: "Arroz Rosalito",
+              description: "Rosalito",
+              price: "R$ 45,00",
+              qty: 2
+          },
+          {
+              _id: 2003,
+              name: "Dolly",
+              description: "Refrigerante sabor guaraná",
+              price: "R$ 20,00",
+              qty: 10
+          },
+          {
+              _id: 2001,
+              name: "Dolly",
+              description: "Refrigerante sabor guaraná",
+              price: "R$ 20,00",
+              qty: 10
+          },
+          {
+              _id: 2004,
+              name: "Dolly",
+              description: "Refrigerante sabor guaraná",
+              price: "R$ 20,00",
+              qty: 10
+          },
+          {
+              _id: 2009,
+              name: "Coca cola",
+              description: "Refrigerante sabor Coca",
+              price: "R$ 25,00",
+              qty: 10
+          }
+      ];
+
+      App.setDataModel("buyList", buyList);
+
+      var componentList = ["buttons", "boxes", "alerts", "headers", "grids", "tables", "forms"];
+
+      for(var i = 0; i < componentList.length; i++){
+        var componentName = componentList[i];
+        var html = App.loadContentPrototype("core/data/components/" + componentName + ".html");
+        SQ("#" + componentName + "_section").html(html);
+    }
+
+      App.initialize(configs);
+    }
+  </script>
+</html>

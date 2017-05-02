@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<terms>
+  <term key="FwName" value="Shortly Framework" lang="pt"/>
+  <term key="FwName" value="Shortly Framework" lang="en"/>
+
+  <term key="FwDescription" value="para quem não quer reinventar a roda" lang="pt"></term>
+  <term key="FwDescription" value="for who want not recreate the wheel " lang="en"></term>
+
+  <term key="Language" value="Idioma" lang="pt"></term>
+  <term key="Language" value="Language" lang="en"></term>
+
+  <term key="Buttons" value="Botões" lang="pt"></term>
+  <term key="Buttons" value="Buttons" lang="en"></term>
+
+  <term key="Box" value="Caixas" lang="pt"></term>
+  <term key="Box" value="Boxes" lang="en"></term>
+
+  <term key="Save" value="Salvar" lang="pt"></term>
+  <term key="Save" value="Save" lang="en"></term>
+
+  <term key="Headers" value="Cabeçalhos" lang="pt"></term>
+  <term key="Headers" value="Headers" lang="en"></term>
+
+  <term key="Alerts" value="Alertas" lang="pt"></term>
+  <term key="Alerts" value="Alerts" lang="en"></term>
+
+  <term key="GridSystem" value="Sistema de Grades Flexíveis" lang="pt"></term>
+  <term key="GridSystem" value="Flexible Grid System" lang="en"></term>
+
+  <term key="Tables" value="Tabelas" lang="pt"></term>
+  <term key="Tables" value="Tables" lang="en"></term>
+
+  <term key="Forms" value="Formularios" lang="pt"></term>
+  <term key="Forms" value="Forms" lang="en"></term>
+
+  <term key="Search" value="Pesquisar" lang="pt"></term>
+  <term key="Search" value="Search" lang="en"></term>
+
+  <term key="Register" value="Cadastrar" lang="pt"></term>
+  <term key="Register" value="Register" lang="en"></term>
+
+  <term key="Edit" value="Editar" lang="pt"></term>
+  <term key="Edit" value="Edit" lang="en"></term>
+
+  <term key="Delete" value="Deletar" lang="pt"></term>
+  <term key="Delete" value="Delete" lang="en"></term>
+
+  <!-- tables -->
+  <term key="BuyList__id" value="ID" lang="pt"></term>
+  <term key="BuyList__id" value="ID" lang="en"></term>
+
+  <term key="BuyList_name" value="Nome" lang="pt"></term>
+  <term key="BuyList_name" value="Name" lang="en"></term>
+
+  <term key="BuyList_description" value="Descrição" lang="pt"></term>
+  <term key="BuyList_description" value="Description" lang="en"></term>
+
+  <term key="BuyList_price" value="Preço" lang="pt"></term>
+  <term key="BuyList_price" value="Price" lang="en"></term>
+
+  <term key="BuyList_qty" value="Quantidade" lang="pt"></term>
+  <term key="BuyList_qty" value="Quantity" lang="en"></term>
+</terms>
